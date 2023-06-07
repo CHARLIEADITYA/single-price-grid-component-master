@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    background-color: hsla(217, 22%, 67%, 0.539);
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main_component {
+    width: 550px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.top_content {
+    padding: 25px;
+    background-color: white;
+}
+
+.top_content h1 {
+    font-weight: 700;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    color: hsla(179, 62%, 43%, 0.824);
+
+}
+
+.top_content h2 {
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    color: hsl(71, 73%, 54%);
+}
+
+.top_content p {
+    margin-top: 10px;
+}
+
+
+.bottom_component {
+    display: flex;
+    justify-content: center;
+    width: 550px;
+
+
+}
+
+.left_component {
+    width: 50%;
+    padding: 32px;
+    background-color: hsl(179, 62%, 43%);
+}
+
+button {
+    padding: 0.6rem 4rem;
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+
+}
+
+.left_component h2 {
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: white;
+
+
+}
+
+.left_component h3 {
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+    font-size: 25px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 0.5rem
+}
+
+.left_component p {
+    margin-top: 8px;
+    color: white;
+}
+
+span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.646);
+}
+
+.right_component h2 {
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+
+.right_component {
+    width: 50%;
+    padding: 32px;
+    background-color: hsla(179, 62%, 43%, 0.769);
+}
+
+.right_component pre {
+    margin-top: 16px;
+    color: rgba(255, 255, 255, 0.651);
+    font-size: 14px;
+    line-height: 1.1rem;
+}
+
+@media (max-width:563px) {
+    .main_component{
+        margin: 1rem;
+    }
+    .bottom_component {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .left_component {
+        width: 100%;
+    }
+
+    .right_component {
+        width: 100%;
+    }
+}
